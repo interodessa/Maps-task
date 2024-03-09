@@ -1,13 +1,14 @@
 package app;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
+
 public class DataProvider {
-    public List<Product> getProductList(){
-        List<Product> products = new ArrayList<>();
-        products.add(new Product("TV", 20, 999.99));
-        products.add(new Product("Phone", 150, 500));
-        products.add(new Product("Notebook", 100, 1500));
-        products.add(new Product("Tablet", 80, 800));
+    public Map<Integer,Product> getProductList(){
+        HashMap<Integer,Product> products = new HashMap();
+        products.put(1, new Product("TV", 20, 999.99));
+        products.put(2, new Product("Phone", 150, 500));
+        products.put(3, new Product("Notebook", 100, 1500));
+        products.put(4, new Product("Tablet", 80, 800));
         return products;
     }
 }

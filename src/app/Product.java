@@ -1,5 +1,6 @@
 package app;
 public class Product {
+    //private final int id;"id: " + id +
     private final String name;
     private final int quantity;
     private final double price;
@@ -11,7 +12,7 @@ public class Product {
     }
     public String toString() {
 
-        return name + ", quantity:" + quantity + ", price:" + price;
+        return  name + ", quantity:" + quantity + ", price:" + price;
     }
 }
 
